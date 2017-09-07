@@ -1,0 +1,49 @@
+// Grammar
+
+<ident>:
+First character is a letter, any proceeding characters are letters or numbers.
+
+<type>:
+A primitive type: string, int, boolean, etc.
+
+<value>:
+Either an ident (for a variable) or a literal (1, "Hello", true)
+
+Class Declaration:
+`class <ident>`
+
+Method Declaration:
+`meth <ident = name> requires ([<type> <ident = name>...]) [returns <type>]`
+
+Variable Declaration:
+`var <type> <ident = name> [= <value>]`
+
+Method Invocation:
+`<ident = name>([<value>...])`
+
+Print Statement:
+`print <value>`
+
+Return Statement:
+`return <value>`
+
+// HelloWorld
+
+class HelloWorld
+
+    meth tain requires ()
+        print "Hello"
+
+// Variables
+
+class Variables
+
+    meth tain requires ()
+        string str = getString()
+        coteString(str)
+        
+    method coteString requires (string str)
+        cote str
+    
+    meth getString requires () returns string
+        return "Hello"
