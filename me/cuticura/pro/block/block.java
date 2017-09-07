@@ -3,7 +3,7 @@ package me.cuticura.pro.block;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import me.pogostick29dev.pro.Variable;
+import me.cuticura.pro.Variable;
 
 /**
  * Represents a block of code.
